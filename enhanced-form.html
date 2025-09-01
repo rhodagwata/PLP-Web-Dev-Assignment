@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Enhancing HTML5 Content & Mastering Forms with semantic structure, media, tables, and built-in validation.">
+  <title>Enhanced HTML5 Content and Forms</title>
+</head>
+<body>
+  <header>
+    <h1>Enhanced HTML5 Forms</h1>
+    <p>This page demonstrates lists, tables, media and a fully structured HTML5 form with native validation.</p>
+  </header>
+
+  <main>
+    <!-- Lists Section -->
+    <section>
+      <h2>Learning Goals</h2>
+      <ul>
+        <li>Use lists and tables effectively</li>
+        <li>Embed media content</li>
+        <li>Build structured and accessible forms</li>
+        <li>Apply HTML5 validation attributes</li>
+      </ul>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+      <h2>Course Schedule</h2>
+      <table border="1">
+        <caption>Weekly Plan</caption>
+        <thead>
+          <tr>
+            <th>Week</th>
+            <th>Topic</th>
+            <th>Focus</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>HTML5 Basics</td>
+            <td>Semantic structure</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Content Enhancement</td>
+            <td>Lists, tables, media</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Forms Mastery</td>
+            <td>Validation and usability</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+      <h2>Media Demonstration</h2>
+      <figure>
+        <img src="https://via.placeholder.com/300x150" alt="Sample placeholder image">
+        <figcaption>A placeholder image embedded with semantic HTML5.</figcaption>
+      </figure>
+
+      <audio controls>
+        <source src="sample-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <video controls width="320">
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname" placeholder="Enter your first name" required><br><br>
+
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" placeholder="Enter your last name" required><br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" minlength="5" maxlength="15" required><br><br>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" minlength="8" required><br><br>
+
+          <label for="confirm">Confirm Password:</label>
+          <input type="password" id="confirm" name="confirm" minlength="8" required><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+            <option value="">--Select a country--</option>
+            <option value="kenya">Kenya</option>
+            <option value="usa">United States</option>
+            <option value="japan">Japan</option>
+          </select><br><br>
+
+          <p>Subscription Plan:</p>
+          <input type="radio" id="basic" name="plan" value="basic" required>
+          <label for="basic">Basic</label><br>
+
+          <input type="radio" id="premium" name="plan" value="premium">
+          <label for="premium">Premium</label><br><br>
+
+          <label>
+            <input type="checkbox" name="terms" required>
+            I agree to the Terms and Conditions
+          </label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Enhanced Form. All rights reserved.</p>
+  </footer>
+</body>
+</html>
